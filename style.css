@@ -1,6 +1,14 @@
 /* Universal Properties*/
 body, html {
     height: 100%;
+    font-family: 'Dosis', sans-serif;
+    font-weight: 200;
+    color: white
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Major Mono Display', monospace;
+    /* font-family rule copied from Google Fonts */
 }
 
 .hero-image {
@@ -20,9 +28,41 @@ body, html {
     left: 50%;
     transform: translate(-50%, -50%);
     color: white;
-  }
+}
+/*style the navbar*/
+#navbar {
+    overflow: hidden;
+    background-color: #260A03;
+}
 
-  div.stuff {
+  /* Navbar links */
+  #navbar a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    font-family: 'Major Mono Display', monospace;
+    /* font-family rule copied from Google Fonts */
+    text-align: center;
+    padding: 14px;
+    text-decoration: none;
+}
+
+#navbar a:hover {
+    color: hotpink;
+    background-color: white;
+}
+
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+.sticky + .content {
+    padding-top: 60px;
+}
+
+div.stuff {
     width: 250px;
     /* height: fit-content; */
     word-wrap: break-word;
@@ -36,7 +76,6 @@ body, html {
     padding: 5px;
 }
 
-  
 div#first {
     background-color: #AAA8B6;
 }
